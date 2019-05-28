@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guzman.dcf.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_margin="12dp"
+        android:id="@+id/ln1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+           android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/coloRed"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/email"
+                android:textColor="@color/coloRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+           android:layout_marginTop="16dp"
+            android:textColorHint="@color/coloRed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_pwd"
+                android:inputType="textPassword"
+                 />
+
+
+
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_marginTop="16dp"
+            android:layout_margin="15dp"
+            android:id="@+id/btnSignIn"
+            android:text="Sign in"
+            android:background="@drawable/custom_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/textViewSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Not Registered? Sign up"
+            android:textAlignment="center"
+            android:textColor="@color/coloRed" />
+        <TextView
+            android:textSize="14dp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skip Login"
+            android:textAlignment="center"
+            android:textColor="@color/coloRed" />
+    </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>

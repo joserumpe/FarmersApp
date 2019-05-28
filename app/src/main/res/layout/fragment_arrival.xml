@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.guzman.dcf.ArrivalFragment">
+
+
+    <LinearLayout
+
+        android:id="@+id/linearl1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp">
+
+        <EditText
+
+            android:id="@+id/date"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:text="Date" />
+
+        <ImageView
+            android:id="@+id/imagedate"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:padding="1dp"
+            android:src="@drawable/ic_date_range_black_24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearl2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:paddingBottom="10dp"
+        android:paddingEnd="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp">
+
+        <EditText
+
+            android:id="@+id/time"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:text="Time" />
+
+        <ImageView
+            android:id="@+id/imagtime"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:padding="1dp"
+            android:src="@drawable/ic_access_time_black_24dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingRight="0dp"
+        android:paddingEnd="40dp"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:orientation="vertical"
+        android:id="@+id/linearSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="8dp"
+            android:id="@+id/btnSaveArrival"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button"
+            android:text="SAVE" />
+    </LinearLayout>
+
+</LinearLayout>

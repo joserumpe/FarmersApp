@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.guzman.dcf.SeedsFragment">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <CheckBox
+        android:id="@+id/ownseed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Own Seeds Stock" />
+
+        <CheckBox
+            android:id="@+id/commercial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Commercial" />
+
+        <CheckBox
+            android:id="@+id/relatives"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Relatives" />
+
+        <Button
+            android:id="@+id/btnSaveSeed"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_button"
+            android:text="Save"
+            android:textColor="@color/coloRed"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>
